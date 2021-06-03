@@ -16,6 +16,7 @@
 		href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
 		rel="stylesheet">
 	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -43,16 +44,16 @@
 	<div class="contenidorpagina">
 
 
-		<h1 class="h1intro">Introducció</h1>
+		<h1 class="h1intro" data-aos="fade-in">Introducció</h1>
 
 		<!-- anelles -->
-		<img src="imatges/anelles.png" alt="" class="anellesintro">
+		<img src="imatges/anelles.png" alt="" class="anellesintro" data-aos="fade-in">
 
 
 		<section>
-			<p class="textintro">La incorporació de la <span class="lila">dona</span>  al <span class="lila"> Jocs Olímpics</span> ha estat molt progressiva en els més de
+			<p class="textintro" data-aos="fade-in">La incorporació de la <span class="lila">dona</span>  al <span class="lila"> Jocs Olímpics</span> ha estat molt progressiva en els més de
 				cent anys d'història de l'Olimpisme modern.</p>
-			<p class="textintro">Malgrat que en la darrera cita olímpica de Rio de Janeiro la participació va ser
+			<p class="textintro" data-aos="fade-in">Malgrat que en la darrera cita olímpica de Rio de Janeiro la participació va ser
 				gairebé paritària en quant a gènere, el camí de les esportistes, però, no ha estat sempre tant prolífic
 				i el recés respecte als homes no és casual.</p>
 			</p>
@@ -84,7 +85,7 @@
 			</div>
 
 			<img src="\Imatges\Baron_Pierre_de_Coubertin.jpg" alt="Retrat de Pierre de Coubertein"
-				class="imatgecoubertein">
+				class="imatgecoubertein" data-aos="fade-left">
 
 		</section>
 
@@ -92,7 +93,7 @@
 
 
 		<section class="contenidorXifres">
-			<div class="conXifres2">
+			<div class="conXifres2" data-aos="fade-in">
 				<div>
 					<p class="xifra1">20%</p>
 					<p class="textXifra">de dones</p>
@@ -100,7 +101,7 @@
 				</div>
 
 			</div>
-			<div class="conXifres3">
+			<div class="conXifres3" data-aos="fade-in">
 				<div>
 					<p class="xifra2">46%</p>
 					<p class="textXifra2">de dones</p>
@@ -126,6 +127,13 @@
 	</footer>
 
 
+
+
+
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script>
+		AOS.init({duration: 1000,});
+	</script>
 </body>
 
 </html>
