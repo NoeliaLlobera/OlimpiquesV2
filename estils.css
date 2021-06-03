@@ -221,8 +221,7 @@ footer {
 	padding: 3px;
 	display: flex;
 	justify-content: space-around;
-	position: absolute;
-	bottom: 0px;
+	margin-bottom: -30px;
 	}
 
 .textpeu {
@@ -489,9 +488,8 @@ text-decoration: underline;
 	align-items: center;
 }
 .conXifres3{
-	width: 50vw;
+	margin-left: calc(50vw - 70px);
 	height: 100vh;
-	position: absolute;
 	right: 0px;
 	display: flex;
 	align-items: center;
@@ -530,4 +528,15 @@ text-decoration: underline;
 	font-weight: 300;
 	margin-right:40px;
 	margin-left: 40px;
+}
+
+.anellesintro{
+	width: 80%;
+	max-width: 500px;
+	display: block;
+	margin: 0px auto;
+}
+
+.relatiu{
+	position:relative;
 }
