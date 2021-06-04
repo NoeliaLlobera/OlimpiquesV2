@@ -9,6 +9,7 @@ html {
 	font-family: 'Roboto', sans-serif;
 	line-height: 1.6;
 	height: 100vh;
+	overflow-x: hidden;
 }
 
 p {
@@ -223,7 +224,6 @@ footer {
 	display: flex;
 	justify-content: space-around;
 	position: absolute;
-	margin-top: -45px;
 	}
 
 .textpeu {
@@ -435,7 +435,7 @@ text-decoration: underline;
 	position: sticky;
 	top: 10vh;
 	right: 30px; 
-	margin: 0px 0px 0px 40px;
+	padding: 0px 0px 0px 40px;
 }
 
 
@@ -475,43 +475,41 @@ text-decoration: underline;
 
 .contenidorXifres{
 	display: flex;
-	margin-top: 60px;
+	width: 100%;
+	margin-bottom: -45px;
 }
 
 .conXifres2{
-	width: 50vw;
+	width: 50%;
 	height: 100vh;
 	background-color: #6F2DBD;
-	position: absolute;
-	left: 0px;
 	display: flex;
 	margin: 0px auto;
-	justify-content: flex-end;
 	align-items: center;
+	justify-content: flex-end;
+	padding-right: 40px;
 }
 .conXifres3{
-	margin-left: calc(50vw - 70px);
+	width: 50%;
 	height: 100vh;
-	right: 0px;
 	display: flex;
+	margin: 0px auto;
 	align-items: center;
+	justify-content: flex-start;
+	padding-left: 40px;
 	
 }
 .xifra1{
 	font-size: calc(10vw + 8rem);
-	margin-right:40px;
     color: white;
 	font-weight: 600;
-	text-align: end;
 	line-height: 1;
 }
 
 .xifra2{
 	font-size: calc(10vw + 8rem);
-	margin-left:40px;
     color:#6F2DBD;
 	font-weight: 600;
-	text-align: end;
 	line-height: 1;
 }
 
@@ -528,7 +526,7 @@ text-decoration: underline;
 	font-size: calc(1.2vw + 1.8rem);
 	margin: 0px;
 	font-weight: 300;
-	margin-right:40px;
+	margin-left:40px;
 	margin-left: 40px;
 }
 
