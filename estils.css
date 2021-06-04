@@ -533,6 +533,7 @@ text-decoration: underline;
 	display: block;
 	margin: 0px auto;
 	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 .relatiu{
