@@ -14,3 +14,14 @@
 						modal.style.display = "none";
 					}
 				}
+
+
+
+
+// PRELOADER
+
+window.onload = function(){
+	alert("Pàgina correctament carregada");
+	document.querySelector(".preloader").style.display = "none";
+
+}
