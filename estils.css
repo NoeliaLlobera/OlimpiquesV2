@@ -376,13 +376,10 @@ text-decoration: underline;
 .contenidoranelles {
 	margin: 0px auto;
 	text-align: center;
-	width: calc(30vw + 100px);
+	width: calc(20vw + 100px);
 	position: relative;
 }
 
-.anellesintro {
-	width: 100%;
-}
 
 .contenidortextintro {
 	margin: 0px auto 50px ;
@@ -531,8 +528,8 @@ text-decoration: underline;
 }
 
 .anellesintro{
-	width: 80%;
-	max-width: 500px;
+	width: 70%;
+	max-width: 400px;
 	display: block;
 	margin: 0px auto;
 }
