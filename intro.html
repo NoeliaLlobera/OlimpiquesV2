@@ -21,15 +21,26 @@
 
 <body>
 
-		<!-- PRELOADER
-		<div class="preloader">
-			<div class="finestrapreload">
-				<img src="Imatges\813.gif">
+		
+	<div id="preloader">
+		<div class="finestrapreload">
+			<div>
+			<img src="Imatges\813.gif" style="display: block; margin: 0px auto;">
+			<p style="display: block; margin: 0px auto;">Carregant pàgina...</p>
 			</div>
-		</div> -->
+		</div>
+	</div>
+
 	
 
 	<!--BARRA NAVEGACIÓ-->
+
+	<!-- <div id="preloader2">
+		<h1 style="margin: 200px;">CARREGANT PÀGINA</h1>
+	</div> -->
+
+	<!--amaga-->
+	<div id="amaga">
 
 	<nav class="nav">
 		<label for="toggle">&#9776;</label>
@@ -129,7 +140,8 @@
 		
 	</footer>
 
-
+	<!-- amaga div final -->
+	</div>
 
 
 
@@ -137,6 +149,22 @@
 	<script>
 		AOS.init({duration: 1000,});
 	</script>
+
+	<script src="codi.js"></script>
+
+	<script>
+		
+		window.onload = function carrega(){	
+			// alert("carregat");	
+			var x = document.getElementById("preloader");
+			x.style.display = "none";
+
+			var y = document.getElementById("amaga");
+			y.style.display = "block";
+		}
+
+	</script>
+
 </body>
 
 </html>

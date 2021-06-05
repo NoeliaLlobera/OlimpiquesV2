@@ -19,17 +19,20 @@
 </head>
 
 <body>
-
+	
 
 	<!-- PRELOADER -->
-	<div class="preloader">
+	<div id="preloader">
 		<div class="finestrapreload">
-			<img src="Imatges\813.gif">
+			<div>
+			<img src="Imatges\813.gif" style="display: block; margin: 0px auto;">
+			<p style="display: block; margin: 0px auto;">Carregant pàgina...</p>
+			</div>
 		</div>
 	</div>
 
 
-
+	<div id="amaga"> 
 	<!--BARRA NAVEGACIÓ-->
 	
 <nav class="nav">
@@ -121,23 +124,7 @@
 			</div>
 
 
-			<!--Javascript-->
-			<script src="codi.js"></script>
 
-
-			<!-- FI CREIDTS-->
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 	
 	
 	
@@ -193,12 +180,28 @@
 
 	
 	
-	
-	
+
 
 	
 	
+				<!--Javascript-->
+				<script src="codi.js"></script>
+
+				<script>
+			
+					window.onload = function carrega(){	
+						// alert("carregat");	
+						var x = document.getElementById("preloader");
+						x.style.display = "none";
+			
+						var y = document.getElementById("amaga");
+						y.style.display = "block";
+					}
+			
+				</script>
 	
 	
+				<!-- FI CREIDTS-->
+			</div>
 </body>
 </html>

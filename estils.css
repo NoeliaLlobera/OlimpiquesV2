@@ -543,13 +543,10 @@ text-decoration: underline;
 
 
 /* PRELOADER */
-
-.preloader{
+#preloader{
 	width: 100vw;
 	height: 100vh;
 	background-color: white;
-	position: absolute;
-	top: 0px;
 	overflow: hidden;
 	z-index: 99999;
 }
@@ -560,4 +557,13 @@ text-decoration: underline;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+}
+
+
+
+
+/* proves */
+
+#amaga{
+	display: none;
 }
