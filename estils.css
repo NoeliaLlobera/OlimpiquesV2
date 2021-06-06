@@ -527,6 +527,32 @@ text-decoration: underline;
 	margin-left: 40px;
 }
 
+@media all and (max-width: 640px){
+	.contenidorXifres{
+	  display:block;
+	}
+	.conXifres2{
+	  width: 100%;
+	  height: 50vh;
+	  justify-content: center;
+	  padding: 0px;
+	}
+	  .conXifres3{
+	  width: 100%;
+	  height: 50vh;
+	  justify-content: center;
+	  padding: 0px;
+	}
+	.textXifra{
+	  text-align:center;
+	  margin: 0px 0px 0px 0px;
+	}
+	 .textXifra2{
+	  text-align:center;
+	  margin: 0px 0px 0px 0px;
+	}
+  }
+
 .anellesintro{
 	width: 70%;
 	max-width: 400px;
