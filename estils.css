@@ -435,6 +435,13 @@ text-decoration: underline;
 	padding: 0px 0px 0px 40px;
 }
 
+@media all and (max-width:768px){
+	.imatgecoubertein{
+		height: 60vh;
+		top: 20vh;
+	}
+}
+
 
 .contenidorpagina{
 	padding: 50px 30px 0px;
@@ -449,20 +456,23 @@ text-decoration: underline;
 	margin: 70px 0px;
 }
 
+
+
 .citacoubertein{
     font-family: "Advent Pro";
     font-weight: 700;
-    font-size: 4rem;
+    font-size: calc(1.3vw + 2.4rem);
     text-align: end;
     color: #6F2DBD;
-	line-height: 5rem;
+	line-height: calc(1.4vw + 3.8rem);
 	margin: 15vh 0px 20px;
 }
 
 .firmacoubertein{
 	text-align: end;
 	color: #6F2DBD;
-    font-weight: 600;
+    font-weight: 400;
+	margin-bottom: 5px;
 }
 
 .contenidorTextCoubertein {
@@ -558,6 +568,44 @@ text-decoration: underline;
 		margin-bottom: 0px;
 	}
   }
+
+  @media all and (max-width: 430px){
+	.contenidorCoubertein{
+		display: block;
+		margin: 40px 0px;
+	}
+
+	.imatgecoubertein{
+		position:static;
+		padding: 0px;
+		display: block;
+		margin: 0px auto;
+	}
+
+	.citacoubertein{
+		text-align: center;
+		margin: 0px;
+	}
+	
+	.firmacoubertein{
+		text-align: center;
+		margin: 10px 0px 0px;
+		padding: 0px;
+	}
+
+	.contenidorTextCoubertein {
+		margin-top: 30px;
+		margin-bottom: 30px;
+	}
+
+	body{
+		overflow-x:hidden;
+	}
+	
+
+
+
+}
 
 .anellesintro{
 	width: 80%;
