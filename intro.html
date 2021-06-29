@@ -22,6 +22,7 @@
 <body>
 
 
+
 	<div id="preloader">
 		<div class="finestrapreload">
 			<div>
@@ -35,11 +36,6 @@
 
 	<!--BARRA NAVEGACIÓ-->
 
-	<!-- <div id="preloader2">
-		<h1 style="margin: 200px;">CARREGANT PÀGINA</h1>
-	</div> -->
-
-	<!--amaga-->
 	<div id="amaga">
 
 		<nav class="nav">
@@ -80,7 +76,6 @@
 					i el recés respecte als homes no és casual.</p>
 				</p>
 			</section>
-
 
 			<section class="contenidorCoubertein">
 
@@ -157,15 +152,26 @@
 
 
 
+
+
+
+
+	<!-- JAVASCRIPT -->
+
+	
+	<!-- AOS library -->
 	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 	<script>
 		AOS.init({ duration: 1000, });
 	</script>
 
+
+	<!-- document separat -->
 	<script src="codi.js"></script>
 
-	<script>
 
+	<!-- codi preloader -->
+	<script>
 		window.onload = function carrega() {
 			// alert("carregat");	
 			var x = document.getElementById("preloader");
@@ -173,9 +179,15 @@
 
 			var y = document.getElementById("amaga");
 			y.style.display = "block";
-		}
 
+			AOS.init();
+		}
 	</script>
+
+
+
+
+
 
 </body>
 
