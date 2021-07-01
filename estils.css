@@ -433,6 +433,15 @@ text-decoration: underline;
 	top: 10vh;
 	right: 30px; 
 	padding: 0px 0px 0px 40px;
+	order: 2;
+}
+
+.ordre{
+	order: 1;
+}
+
+.ordre2{
+	order:3;
 }
 
 @media all and (max-width:768px){
@@ -454,6 +463,10 @@ text-decoration: underline;
 .contenidorCoubertein{
 	display: flex;
 	margin: 70px 0px;
+}
+
+.contenidorCouberteinMobil{
+	display: none;
 }
 
 
@@ -569,17 +582,21 @@ text-decoration: underline;
 	}
   }
 
-  @media all and (max-width: 430px){
+  @media all and (max-width: 500px){
 	.contenidorCoubertein{
-		display: block;
+		display: none;
 		margin: 40px 0px;
+	}
+
+	.contenidorCouberteinMobil{
+		display: block;
 	}
 
 	.imatgecoubertein{
 		position:static;
 		padding: 0px;
 		display: block;
-		margin: 0px auto;
+		margin: 30px auto;
 	}
 
 	.citacoubertein{
@@ -602,6 +619,13 @@ text-decoration: underline;
 		overflow-x:hidden;
 	}
 	
+	footer{
+		display: block;
+		position: static;
+		height: auto;
+		padding: 5px;
+		text-align: center;
+	}
 
 
 
