@@ -671,3 +671,28 @@ text-decoration: underline;
 #amaga{
 	display: none;
 }
+
+
+
+/* INDEX */
+
+.itemIndex{
+	display: flex;
+	padding: 14px;
+}
+.fotoIndex{
+	background-color: khaki;
+	height: calc(5vw + 80px);
+	width: calc(8vw + 120px);
+}
+.h2Index{
+	margin: 20px 20px;
+	font-size: calc(0.7vw + 1.2rem);
+}
+.h1Index{
+	font-family: "Advent Pro";
+	text-align: center;
+	color: #6F2DBD;
+	font-size: calc(3vw + 1.5rem);
+	margin-top: 30px;
+}
