@@ -674,25 +674,47 @@ text-decoration: underline;
 
 
 
-/* INDEX */
+/* MENÚ */
 
 .itemIndex{
 	display: flex;
 	padding: 14px;
+	max-width: 800px;
 }
 .fotoIndex{
 	background-color: khaki;
 	height: calc(5vw + 80px);
 	width: calc(8vw + 120px);
 }
-.h2Index{
+.h3Index{
 	margin: 20px 20px;
-	font-size: calc(0.7vw + 1.2rem);
+	font-size: calc(0.7vw + 1.1rem);
 }
-.h1Index{
-	font-family: "Advent Pro";
-	text-align: center;
-	color: #6F2DBD;
-	font-size: calc(3vw + 1.5rem);
-	margin-top: 30px;
+.h2Index{
+	display: block;
+	border-bottom: solid 2px #6F2DBD;
+	width: 46px;
+	margin: 0px auto;
+	font-size: 1.7rem;
+	height: 50px;
+	padding-top: 13px;
+}
+.barraMenu{
+	height: 50px;
+	width: 100%;
+	background-color: rgba(255, 255, 255);
+	position: fixed;
+}
+
+.contenidorMenu{
+	margin: 0px auto;
+	width: 800px;
+	padding-top: 60px;
+	background-color: rgba(255, 255, 255, 0.7);
+}
+
+.iconaTanca{
+	background-color: rgba(255, 255, 255, 0.7);
+	width: 50px;
+	height: 100%;
 }
