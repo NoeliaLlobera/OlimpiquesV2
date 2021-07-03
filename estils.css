@@ -679,11 +679,13 @@ text-decoration: underline;
 	display: flex;
 	padding: 14px;
 	max-width: 800px;
+	width: 100vw;
 }
 .fotoIndex{
 	background-color: khaki;
 	height: calc(5vw + 80px);
-	width: calc(8vw + 120px);
+	min-width: calc(8vw + 120px);
+
 }
 .h3Index{
 	margin: 20px 20px;
@@ -704,12 +706,15 @@ text-decoration: underline;
 	height: 55px;
 	width: 100%;
 	background-color: rgba(255, 255, 255);
+	position: fixed;
 }
 
 .contenidorMenu{
 	margin: 0px auto;
 	width: 800px;
-	padding: 30px 0px;
+	padding: 40px 0px;
+	height: calc(90vh - 55px);
+	overflow-y: auto;
 }
 
 .iconaTanca{
@@ -733,6 +738,7 @@ button{
 	margin-top: 20px;
 	/* display: none; */
 	overflow-y: scroll;
+	overflow-x: hidden;
 	background-color: rgba(233, 233, 233, 0.9);
 	position: absolute;
 	top: 20px;
