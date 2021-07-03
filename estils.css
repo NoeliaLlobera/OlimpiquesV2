@@ -712,9 +712,10 @@ text-decoration: underline;
 .contenidorMenu{
 	margin: 0px auto;
 	width: 800px;
-	padding: 40px 0px;
+	padding: 10px 0px;
 	height: calc(90vh - 55px);
 	overflow-y: auto;
+	margin-top:55px;
 }
 
 .iconaTanca{

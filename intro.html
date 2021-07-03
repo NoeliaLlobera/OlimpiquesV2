@@ -38,7 +38,7 @@
 
 	<div id="amaga">
 
-		<nav class="nav">
+		<nav class="nav" id="nav">
 			<label for="toggle">&#9776;</label>
 			<input type="checkbox" id="toggle" />
 			<ul class="ulmenu">
@@ -159,8 +159,8 @@
 
 
 		<!-- COS DE PAGINA -->
-
-		<div class="contenidorpagina">
+		<main id="cos">
+		<div class="contenidorpagina" id="cos">
 
 
 			<h1 class="h1intro" data-aos="fade-in">Introducció</h1>
@@ -283,7 +283,7 @@
 		<!-- amaga div final -->
 	</div>
 
-
+</main>
 
 
 
@@ -347,11 +347,16 @@
 	<script>
 		var modal2 = document.getElementById("modalindex");
 		var btn2 = document.getElementById("botoindex");
-		var span2 = document.getElementsByClassName("iconaTanca")[0];
+		var span2 = document.getElementsByClassName
+		("iconaTanca")[0];
+		var nav = document.getElementById
+		("nav");
 	
 		btn2.onclick = function () {
 				modal2.style.display = "block";
 				modal2.style.transform ="translateY(0%)";
+				modal2.style.position ="fixed";
+				nav.style.position="fixed";
 			}
 			span2.onclick = function () {
 				modal2.style.transform ="translateY(-120%)";
