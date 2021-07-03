@@ -285,7 +285,6 @@ text-decoration: underline;
 	transform: translate(-50%, -50%);
 	z-index: 4444444444;
 	display: none;
-
 }
 
 #modalcredits::-webkit-scrollbar {
@@ -692,29 +691,62 @@ text-decoration: underline;
 }
 .h2Index{
 	display: block;
-	border-bottom: solid 2px #6F2DBD;
+	border-bottom: solid 2.5px #6F2DBD;
 	width: 46px;
-	margin: 0px auto;
+	margin: -12px auto 0px;
 	font-size: 1.7rem;
-	height: 50px;
-	padding-top: 13px;
+	line-height: 5rem;
+	
+	/* height: 50px;
+	padding-top: 13px; */
 }
 .barraMenu{
-	height: 50px;
+	height: 55px;
 	width: 100%;
 	background-color: rgba(255, 255, 255);
-	position: fixed;
 }
 
 .contenidorMenu{
 	margin: 0px auto;
 	width: 800px;
-	padding-top: 60px;
-	background-color: rgba(255, 255, 255, 0.7);
+	padding: 30px 0px;
 }
 
 .iconaTanca{
-	background-color: rgba(255, 255, 255, 0.7);
-	width: 50px;
-	height: 100%;
+	background-color: rgba(233, 233, 233, 0.9);
+	width: 55px;
+	padding: 18px;
+	position: fixed;
+	right: 0px;
+	top: 0px;
+	margin: 0px;
+	transform:rotate(-180deg)
+}
+
+button{
+	cursor: pointer;
+}
+
+#modalindex{
+	height: 90vh; 
+	width: 100vw;
+	margin-top: 20px;
+	/* display: none; */
+	overflow-y: scroll;
+	background-color: rgba(233, 233, 233, 0.9);
+	position: absolute;
+	top: 20px;
+	z-index: 9;
+	transition: transform 1s;
+	transform: translateY(-120%);
+}
+
+.enllaçSubtratllat{
+	text-decoration: none;
+	color: black;
+}
+
+.enllaçSubtratllat:hover{
+	text-decoration: underline;
+	color: black;
 }
