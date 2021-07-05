@@ -111,18 +111,16 @@
 
 		<!-- MENU / INDEX -->
 		<div id="modalindex">
-
 				
 			<div class="barraMenu">
 				<button><img src="Imatges\down-arrow.png" class="iconaTanca"></button>
 				<h2 class="h2Index">Menú</h2>
 			</div>
-			
-
+	
 			<div class="contenidorMenu">
 		
 				<div class="itemIndex">
-					<a href="intro.html" class="enllaçimatge"><div class="fotoIndex"> </div></a>
+					<a href="intro.html" class="enllaçimatge"><div class="fotoIndex"><div class="imatgeIndexIntroduccio"></div></div></a>
 					<h3 class="h3Index"><a href="intro.html" class="enllaçSubtratllat">Introducció</a></h3>
 				</div>
 		
@@ -151,9 +149,9 @@
 					<h3 class="h3Index">Tokio 2020. Un pas més cap endavant</h3>
 				</div>
 			</div>
-		
 			
 		</div>
+	<!-- MENU / INDEX -->
 
 
 
@@ -316,21 +314,18 @@
 
 	
 	<!-- JAVASCRIPT -->
+<!-- JAVASCRIPT -->
+<script src="codi.js"></script>
 
-	
-	<!-- AOS library -->
-	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-	<script>
-		AOS.init({ duration: 1000, });
-	</script>
-
-
-	<!-- document separat -->
-	<script src="codi.js"></script>
+    <!-- AOS library -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init({ duration: 1000, });
+</script>
 
 
-	<!-- codi preloader -->
-	<script>
+    <!-- PRELOADER -->
+<script>
 		window.onload = function carrega() {
 			// alert("carregat");	
 			var x = document.getElementById("preloader");
@@ -341,33 +336,55 @@
 
 			AOS.init();
 		}
-	</script>
+</script>
 
-	<!-- MODAL INDEX -->
+
+    <!-- MODAL INDEX -->
 	<script>
 		var modal2 = document.getElementById("modalindex");
 		var btn2 = document.getElementById("botoindex");
 		var span2 = document.getElementsByClassName
 		("iconaTanca")[0];
 		var nav = document.getElementById
-		("nav");
+			("nav");
 	
 		btn2.onclick = function () {
 				modal2.style.display = "block";
 				modal2.style.transform ="translateY(0%)";
-				modal2.style.position ="fixed";
 				nav.style.position="fixed";
 			}
 			span2.onclick = function () {
 				modal2.style.transform ="translateY(-120%)";
+				nav.style.position="static";
 			}
-	
 			window.onclick = function (event) {
 				if (event.target == modal2) {
 					modal2.style.transform ="translateY(-120%)";
 				}
 			}
 	</script>
+	
+
+<!-- CREDITS -->
+<script>
+    var modal = document.getElementById("modalcredits");
+	var btn = document.getElementById("botocredits");
+	var span = document.getElementsByClassName("creu")[0];
+	btn.onclick = function () {
+	modal.style.display = "block";
+	}
+	span.onclick = function () {
+		modal.style.display = "none";
+	}
+
+	window.onclick = function (event) {
+	if (event.target == modal) {
+		modal.style.display = "none";
+	}
+	}
+</script>
+
+<!-- JAVASCRIPT -->
 
 
 

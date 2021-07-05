@@ -223,13 +223,21 @@ footer {
 	height: 45px;;
 	display: flex;
 	justify-content: space-around;
-	position: absolute;
+	position: relative;
 	}
 
 .textpeu {
 	color: white;
 	font-size: 1.4rem;
 	margin: 5px;
+
+}
+
+.textpeu2 {
+	color: white;
+	font-size: 1.6rem;
+	margin: 5px;
+	text-transform:uppercase;
 }
 
 	/*FOOTER*/
@@ -673,6 +681,14 @@ text-decoration: underline;
 
 
 
+
+
+
+
+
+
+
+
 /* MENÚ */
 
 .itemIndex{
@@ -682,7 +698,7 @@ text-decoration: underline;
 	width: 100vw;
 }
 .fotoIndex{
-	background-color: khaki;
+	/* background-color: khaki; */
 	height: calc(5vw + 80px);
 	min-width: calc(8vw + 120px);
 
@@ -699,8 +715,6 @@ text-decoration: underline;
 	font-size: 1.7rem;
 	line-height: 5rem;
 	
-	/* height: 50px;
-	padding-top: 13px; */
 }
 .barraMenu{
 	height: 55px;
@@ -715,6 +729,7 @@ text-decoration: underline;
 	padding: 10px 0px;
 	height: calc(90vh - 55px);
 	overflow-y: auto;
+	overflow-x: hidden;
 	margin-top:55px;
 }
 
@@ -737,11 +752,10 @@ button{
 	height: 90vh; 
 	width: 100vw;
 	margin-top: 20px;
-	/* display: none; */
 	overflow-y: scroll;
 	overflow-x: hidden;
 	background-color: rgba(233, 233, 233, 0.9);
-	position: absolute;
+	position: fixed;
 	top: 20px;
 	z-index: 9;
 	transition: transform 1s;
@@ -756,4 +770,23 @@ button{
 .enllaçSubtratllat:hover{
 	text-decoration: underline;
 	color: black;
+}
+
+.imatgeIndexIntroduccio{
+	background-image:url("Imatges/thumbnails/intro-thumbnail.png");
+	filter: grayscale(40%);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	height: 100%;
+	width: 100%;´
+	-webkit-transition: all 0.5s ease; 
+	-moz-transition: all 0.5s ease; 
+	-ms-transition: all 0.5s ease; 
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+
+.imatgeIndexIntroduccio:hover{
+	transform: scale(0.95);
 }

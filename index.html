@@ -36,23 +36,23 @@
 
 
 	<!--BARRA NAVEGACIÓ-->
-	
-<nav class="nav">
-	
-		<label for="toggle">&#9776;</label>
-		<input type="checkbox" id="toggle" />
-	
-  	<ul class="ulmenu">
+		<nav class="nav" id="nav">
+			
+				<label for="toggle">&#9776;</label>
+				<input type="checkbox" id="toggle" />
+			
+			<ul class="ulmenu">
 
-		<li class="limenu"><button class="botonsnav" id="botoinici"><a class="amenu" href="">Inici</a></button></li>
-		<li class="limenu"><button class="botonsnav" id="botoindex">Índex</button></li>	
-		<li class="limenu"><button class="botonsnav" id="botoentrevistes">Entrevistes</button></li>				
-		<li class="limenu"><button class="botonsnav" id="botoesportistes">Esportistes</button></li>
-		<li class="limenu"><button class="botonsnav" id="botomedaller">Medaller</button></li>		
-		<li class="limenu"><button class="botonsnav" id="botocredits">Crèdits</button></li>
-				
-  	</ul>
-</nav>
+				<li class="limenu"><button class="botonsnav" id="botoinici"><a class="amenu" href="">Inici</a></button></li>
+				<li class="limenu"><button class="botonsnav" id="botoindex">Índex</button></li>	
+				<li class="limenu"><button class="botonsnav" id="botoentrevistes">Entrevistes</button></li>				
+				<li class="limenu"><button class="botonsnav" id="botoesportistes">Esportistes</button></li>
+				<li class="limenu"><button class="botonsnav" id="botomedaller">Medaller</button></li>		
+				<li class="limenu"><button class="botonsnav" id="botocredits">Crèdits</button></li>
+						
+			</ul>
+		</nav>
+	<!--BARRA NAVEGACIÓ-->
 	
 	
 	
@@ -65,8 +65,7 @@
 	
 	
 	
-	
-				<!--INICI CREIDTS-->
+	<!--INICI CREIDTS-->
 
 			<div id="modalcredits">
 				<!--Creu-->
@@ -121,23 +120,7 @@
 
 			</div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-			<!-- MENU / INDEX -->
+	<!-- MENU / INDEX -->
 			<div id="modalindex">
 
 				
@@ -150,7 +133,7 @@
 				<div class="contenidorMenu">
 			
 					<div class="itemIndex">
-						<a href="intro.html" class="enllaçimatge"><div class="fotoIndex"> </div></a>
+						<a href="intro.html" class="enllaçimatge"><div class="fotoIndex"><div class="imatgeIndexIntroduccio"></div></div></a>
 						<h3 class="h3Index"><a href="intro.html" class="enllaçSubtratllat">Introducció</a></h3>
 					</div>
 			
@@ -183,47 +166,7 @@
 				
 			</div>
 			
-			
-
-
-			
-
-				
-
-
-
-
 		
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-			<!--menu-->
-
-
-	
-	
-	
-	
 	
 <!--PÀGINA-->
 
@@ -241,33 +184,12 @@
 		</div>
 		
 	</div>
-	
-		 
-	
-	</div>	
-	
+
+	</div>		
 
 </main>
 
-
-
-
-
-	
-
-
-<!--	
-<footer>
-
-	<p class="textpeu"> <strong>Autores:</strong> Maria Asmarat i Noèlia Llobera</p>
-
-	<p class="textpeu"> <strong>Contacte:</strong> donesalsjocs@gmail.com </p>
-	
-</footer>
-	
-	
-	-->
-	
+</div>
 	
 	
 	
@@ -277,8 +199,7 @@
 
 
 	
-	
-				<!--Javascript-->
+<!--JAVASCRIPT-->
 				<script src="codi.js"></script>
 
 				<script>
@@ -302,37 +223,29 @@
 					var span2 = document.getElementsByClassName
 					("iconaTanca")[0];
 					var main = document.getElementById("main");
+					var nav = document.getElementById
+						("nav");
 				
 					btn2.onclick = function () {
 							modal2.style.display = "block";
 							modal2.style.transform ="translateY(0%)";
 							main.style.height = "100vh"
 							main.style.overflow="hidden";
+							nav.style.position="fixed";
+							
 						}
 						span2.onclick = function () {
 							modal2.style.transform ="translateY(-120%)";
+							nav.style.position="static";
 						}
-				
 						window.onclick = function (event) {
 							if (event.target == modal2) {
 								modal2.style.transform ="translateY(-120%)";
 							}
 						}
 				</script>
-	
-				<!-- FI CREIDTS-->
-			</div>
 
-
-
-
-
-
-
-
-
-
-			<!-- JAVASCRIPT -->
+		¡¡<!-- JAVASCRIPT -->
 
 
 </body>
