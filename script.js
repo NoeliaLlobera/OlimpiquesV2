@@ -5,7 +5,6 @@ let preloader = () => {
 
         var y = document.getElementById("contenidor_pagina");
         y.style.display = "block";
-    
 }
 window.onload = preloader;
 
@@ -13,14 +12,15 @@ window.onload = preloader;
 let desplegar_menu = () =>{
         let x = document.getElementById("menu_movil");
         let y = document.getElementById("label_toggle");
-        if(x.style.left == "-1000px") {
-                x.style.left="0px";
-                // y.style.display="none"
-        } else {
-                x.style.left = "-1000px";
-        }
+        x.style.left="0px";
+        y.style.display="none"
 }
 
 let plegar_menu = () => {
+        let x = document.getElementById("menu_movil");
+        let y = document.getElementById("label_toggle");
+        x.style.left = "-1000px";
+        y.style.display="block"
+
 
 }

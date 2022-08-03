@@ -83,21 +83,46 @@
         position: absolute;
         top: 40px;
         left: 40px;
-        z-index: 2;
-        
+        z-index: 1;
+        cursor: pointer;
     }
     #menu_movil{
-        width: 80vw;
-        height: 400px;
+        width: 75vw;
+        height: 450px;
         background-color: #373539;
         position: absolute;
         top: 0px;
         left: -1000px;
-        z-index:1;
+        z-index:2;
         transition-duration: 800ms;   
         }
     #toggle {
         opacity: 0;
+    }
+    #boto_plegar{
+        background-color: #373539;
+        border: none;
+        font-size: calc(1.5vw + 10px);
+        color: white;
+        position: sticky;
+        left: calc(75vw - 50px);
+        top: 25px;
+        cursor: pointer;
+    }
+    .ulmenu{
+        height: 80%;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        margin-right: 30px;
+        margin-top: 10px;
+    }
+    .limenu{
+        display: inline-block;
+        text-align: center;
+        width: 250px;
+        padding: 20px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.432);
     }
     
 }
