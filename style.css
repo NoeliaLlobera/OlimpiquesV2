@@ -1,0 +1,103 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+/* PRELOADER */
+#preloader{
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    overflow: hidden;
+    z-index: 99999;
+}
+#finestra_preloader{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#imatge_preloader{
+    display: block;
+    margin: 0px auto;
+}
+#text_preloader{
+    display: block;
+    margin: 0px auto;
+}
+#amaga{
+    display:none;
+}
+/*BARRA NAVEGACIÓ*/
+#nav_desktop{
+	width: 100%;
+	background-color: #373539;
+	position: absolute;
+	z-index: 9999;
+	top: 0px;
+    left: 0px;
+	padding: 8px;
+}
+#nav_mobile{
+    display: none;
+}
+.ulmenu{
+    display: flex;
+    justify-content: center;
+	color: white;
+	font-family: 'Roboto', sans-serif;
+	font-size: 0.875rem;
+	list-style: none;
+	}
+.limenu {
+    margin: auto 20px auto 40px;
+}
+.botonsnav {
+	background-color: #373539;
+	border: none;
+	color: white;
+	margin: 0px 0px 0px -5px;
+	cursor: pointer;
+}
+.botonsnav:hover {
+	text-decoration: underline;	
+}
+.amenu {
+	color: white;
+	text-decoration: none;
+}
+
+
+/* VERSIÓ TABLET */
+@media all and (min-width:426px) and (max-width:768px) {
+    #nav_desktop{
+        display: none;
+    }
+    #nav_mobile{
+        display: initial;
+    }
+    #label_toggle{
+        font-size: calc(1.8vw + 20px);
+        position: absolute;
+        top: 40px;
+        left: 40px;
+        z-index: 2;
+        
+    }
+    #menu_movil{
+        width: 80vw;
+        height: 400px;
+        background-color: #373539;
+        position: absolute;
+        top: 0px;
+        left: -1000px;
+        z-index:1;
+        transition-duration: 800ms;   
+        }
+    #toggle {
+        opacity: 0;
+    }
+    
+}

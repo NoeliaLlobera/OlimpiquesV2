@@ -654,21 +654,30 @@ text-decoration: underline;
 
 
 /* PRELOADER */
-#preloader{
-	width: 100vw;
-	height: 100vh;
-	background-color: white;
-	overflow: hidden;
-	z-index: 99999;
-}
+/* COMPROVAT ------------------------- */
+	#preloader{
+		width: 100vw;
+		height: 100vh;
+		background-color: white;
+		overflow: hidden;
+		z-index: 99999;
+	}
 
-.finestrapreload{
-	width: 100%;
-	height: 100%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
+	#finestra_preloader{
+		width: 100%;
+		height: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	#imatge_preloader{
+		display: block;
+		margin: 0px auto;
+	}
+	#text_preloader{
+		display: block;
+		margin: 10px auto;
+	}
 
 
 
@@ -676,6 +685,10 @@ text-decoration: underline;
 /* proves */
 
 #amaga{
+	display: none;
+}
+
+#contenidor_pagina{
 	display: none;
 }
 
