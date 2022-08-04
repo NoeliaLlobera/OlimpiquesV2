@@ -1,251 +1,95 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ca">
 
-
 <head>
-	<link href="estils.css" rel="stylesheet" type="text/css">
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title> -Olímpiques - Reconstruint el camí</title>
-	<meta name="description" content="Un recorregut per la historia de l'olimpisme femení català" />
-	<link rel="preconnect" href="https://fonts.gstatic.com">
+    <title> -Olímpiques - Reconstruint el camí</title>
+    <meta name="description" content="Un recorregut per la historia de l'olimpisme femení català">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Advent+Pro:wght@100;200;300;400;500;600;700&display=swap"
 		rel="stylesheet">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-	<meta name="viewport" content="width=device-width,initial-scale=1">
-	<link rel="prefetch" href="intro.html">
+    <!-- Estils -->
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
+    <!-- Precarregar intorducció -->
+    <link rel="prefetch" href="intro.html">
+    <script src="script.js"></script>
 </head>
 
 <body>
-	
-
-	<!-- PRELOADER -->
-	<div id="preloader">
-		<div class="finestrapreload">
+    <!-- PRELOADER -->
+    <div id="preloader">
+		<div id="finestra_preloader">
 			<div>
-			<img src="Imatges\813.gif" style="display: block; margin: 0px auto;">
-			<p style="display: block; margin: 0px auto;">Carregant pàgina...</p>
+			<img src="Imatges\813.gif" id="imatge_preloader">
+			<p id="text_preloader">Carregant pàgina...</p>
 			</div>
 		</div>
 	</div>
-
-
-	<div id="amaga"> 
-
-
-	<!--BARRA NAVEGACIÓ-->
-		<nav class="nav" id="nav">
-			
-				<label for="toggle">&#9776;</label>
-				<input type="checkbox" id="toggle" />
-			
+    
+    <!-- PÀGINA -->
+    <div id="contenidor_pagina">
+        <!-- BARRA NAVEGACIÓ -->
+        <nav id="nav_desktop">
 			<ul class="ulmenu">
-
 				<li class="limenu"><button class="botonsnav" id="botoinici"><a class="amenu" href="">Inici</a></button></li>
 				<li class="limenu"><button class="botonsnav" id="botoindex">Índex</button></li>	
 				<li class="limenu"><button class="botonsnav" id="botoentrevistes">Entrevistes</button></li>				
 				<li class="limenu"><button class="botonsnav" id="botoesportistes">Esportistes</button></li>
 				<li class="limenu"><button class="botonsnav" id="botomedaller">Medaller</button></li>		
 				<li class="limenu"><button class="botonsnav" id="botocredits">Crèdits</button></li>
-						
-			</ul>
-		</nav>
-	<!--BARRA NAVEGACIÓ-->
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	<!--INICI CREIDTS-->
+            </ul>
+        </nav>
+        <nav id="nav_mobile">
+            <label for="toggle" id="label_toggle">&#9776;</label>
+            <input type="checkbox" name="toggle" id="toggle" onchange="desplegar_menu()">
+            <div id="menu_movil">
+               <button id="boto_plegar" type="button" onclick="plegar_menu()">&#9587;</button> 
+               	<ul class="ulmenu">
+                    <li class="limenu"><button class="botonsnav" id="botoinici"><a class="amenu" href="">Inici</a></button></li>
+                    <li class="limenu"><button class="botonsnav" id="botoindex">Índex</button></li>	
+                    <li class="limenu"><button class="botonsnav" id="botoentrevistes">Entrevistes</button></li>				
+                    <li class="limenu"><button class="botonsnav" id="botoesportistes">Esportistes</button></li>
+                    <li class="limenu"><button class="botonsnav" id="botomedaller">Medaller</button></li>		
+                    <li class="limenu"><button class="botonsnav" id="botocredits">Crèdits</button></li>
+                </ul> 
+            </div>
+        </nav>
 
-			<div id="modalcredits">
-				<!--Creu-->
-				<span class="creu">&times;</span>
-				<div class="clearboth"> </div>
-
-				<!--Titulació-->
-				<h2 class="titolcredits">Olímpiques: Reconstruint el camí</h2>
-				<h3 class="subtitolcredits">Histories de les esportistes olímpiques catalanes</h3>
-
-
-				<div class="wrapper">
-
-					<!--Columna1-->
-					<div class="bloc">
-
-						<h4 class="h3credits">Sobre el projecte</h4>
-
-						<p>"Olímpiques: Reconstruint el camí" és un reportatge fet per Maria Asmarat i Noèlia Llobera.
-							És el resultat del treball de final de grau del Periodisme a la Universitat Pompeu fabra.
-						</p>
-
-						<p>Si voleu contactar amb nosaltres ho podeu fer a través del correu electrónic:
-							donescatalanesalsjocs@gmail.com</p>
-
-					</div>
+        <main>
+            <div class="containerinici">
+                <div class="titols">
+                    <h1 class="h1inici">OLÍMPIQUES</h1>
+                    <h2 class="h2inici">Reconstruint el camí</h2>
+                    <p class="pacomenca"><a class="acomenca" href="intro.html">Comença</a></p>
+                    <div class="credits">
+                    <p class="pcredits">Un reportatge de MARIA ASMARAT i NOÈLIA LLOBERA</p>
+                    </div>   
+                </div>
+            </div>		
 
 
-					<!--columna 2-->
-					<div class="bloc">
-
-						<h4 class="h3credits">Crèdits</h4>
-
-						<h5 class="h4credits">Agraïments</h5>
-
-						<p>Roberto Jimenez, Silvia Mas, Pedro Hernández, Xavier Pujadas, Dolors Jané, Sílvia Parera,
-							Bàrbara Pla, Cèlia Corres, Eli Martínez, Monica Solana, Angel Bassas, Anna Giralt, Aina Cid,
-							Anna Espa, Clara Espar, Berta Bonastre, Cristina Guinea, Centre d'Estudis Olímpics, Club
-							Tenis Barcelona, Club Natació Sabadell</p>
-
-						<h5 class="h4credits">Documentació</h5>
-
-						<p>Jimenez Morales, Roberto. (2015). El deporte femenino español en los Juegos Olímpicos.
-							Madrid: Consejo Superior de Deportes</p>
-						<p><a href="https://www.sports-reference.com" class="webgrafia" target="_blank">Sports
-								Reference</a>. Accés maig 2020.</p>
-
-					</div>
 
 
-				</div>
-
-			</div>
-
-	<!-- MENU / INDEX -->
-			<div id="modalindex">
-
-				
-				<div class="barraMenu">
-				    <button><img src="Imatges\down-arrow.png" class="iconaTanca"></button>
-					<h2 class="h2Index">Menú</h2>
-				</div>
-				
-
-				<div class="contenidorMenu">
-			
-					<div class="itemIndex">
-						<a href="intro.html" class="enllaçimatge"><div class="fotoIndex"><div class="imatgeIndexIntroduccio"></div></div></a>
-						<h3 class="h3Index"><a href="intro.html" class="enllaçSubtratllat">Introducció</a></h3>
-					</div>
-			
-					<div class="itemIndex">
-						<div class="fotoIndex"> ss</div>
-						<h3 class="h3Index">Digue'm d'on vens i et diré si vas a uns jocs</h3>
-					</div>
-			
-					<div class="itemIndex">
-						<div class="fotoIndex"> ss</div>
-						<h3 class="h3Index">Portes entreobertes</h3>
-					</div>
-			
-					<div class="itemIndex">
-						<div class="fotoIndex"> ss</div>
-						<h3 class="h3Index">Dones a la piscina: el salt que obre el camí</h3>
-					</div>
-			
-					<div class="itemIndex">
-						<div class="fotoIndex"> ss</div>
-						<h3 class="h3Index">Barcelona '92. Una explolsió de participants i resultats</h3>
-					</div>
-			
-					<div class="itemIndex">
-						<div class="fotoIndex"> </div>
-						<h3 class="h3Index">Tokio 2020. Un pas més cap endavant</h3>
-					</div>
-				</div>
-			
-				
-			</div>
-			
-		
-	
-<!--PÀGINA-->
-
-<main id="main">
-	<div class="containerinici">
-	<div class="titols">
-		
-		<h1 class="h1inici">OLÍMPIQUES</h1>
-		<h2 class="h2inici">Reconstruint el camí</h2>
-		
-		<p class="pacomenca"><a class="acomenca" href="intro.html">Comença</a></p>
-		
-		<div class="credits">
-		<p class="pcredits">Un reportatge de MARIA ASMARAT i NOÈLIA LLOBERA</p>
-		</div>
-		
-	</div>
-
-	</div>		
-
-</main>
-
-</div>
-	
-	
-	
-
-	
-	
 
 
-	
-<!--JAVASCRIPT-->
-				<script src="codi.js"></script>
 
-				<script>
-			
-					window.onload = function carrega(){	
-						// alert("carregat");	
-						var x = document.getElementById("preloader");
-						x.style.display = "none";
-			
-						var y = document.getElementById("amaga");
-						y.style.display = "block";
-					}
-			
-				</script>
-	
 
-				<!-- MODAL INDEX -->
-				<script>
-					var modal2 = document.getElementById("modalindex");
-					var btn2 = document.getElementById("botoindex");
-					var span2 = document.getElementsByClassName
-					("iconaTanca")[0];
-					var main = document.getElementById("main");
-					var nav = document.getElementById
-						("nav");
-				
-					btn2.onclick = function () {
-							modal2.style.display = "block";
-							modal2.style.transform ="translateY(0%)";
-							main.style.height = "100vh"
-							main.style.overflow="hidden";
-							nav.style.position="fixed";
-							
-						}
-						span2.onclick = function () {
-							modal2.style.transform ="translateY(-120%)";
-							nav.style.position="static";
-						}
-						window.onclick = function (event) {
-							if (event.target == modal2) {
-								modal2.style.transform ="translateY(-120%)";
-							}
-						}
-				</script>
 
-		<!-- JAVASCRIPT -->
+        </main>
+
+    
+    
+    
+    
+    
+    
+    </div>
 
 
 </body>

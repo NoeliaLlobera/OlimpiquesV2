@@ -21,6 +21,4 @@ let plegar_menu = () => {
         let y = document.getElementById("label_toggle");
         x.style.left = "-1000px";
         y.style.display="block"
-
-
 }

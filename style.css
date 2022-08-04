@@ -30,6 +30,7 @@
 #amaga{
     display:none;
 }
+
 /*BARRA NAVEGACIÓ*/
 #nav_desktop{
 	width: 100%;
@@ -68,15 +69,16 @@
 	color: white;
 	text-decoration: none;
 }
-
-
-/* VERSIÓ TABLET */
-@media all and (min-width:426px) and (max-width:768px) {
+    /* NAV TABLET I MÒVIL */
+@media all and (max-width:768px) {
+    nav{
+        height: 0px;
+    }
     #nav_desktop{
         display: none;
     }
     #nav_mobile{
-        display: initial;
+        display: block;
     }
     #label_toggle{
         font-size: calc(1.8vw + 20px);
@@ -123,6 +125,68 @@
         width: 250px;
         padding: 20px;
         border-bottom: 1px solid rgba(255, 255, 255, 0.432);
-    }
-    
+    }   
+}
+
+/* PORTADA */
+.containerinici {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 90px 40px 20px;
+	background-image: linear-gradient(rgba(255,255,255,0.4),rgba(255,255,255,0.4)),url("Imatges/atletisme.jpeg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+	/*titulació inici*/
+.h1inici {
+	font-family: "Advent Pro";
+	text-align: center;
+	color: #6F2DBD;
+	line-height: normal;
+	font-size: calc(5.55vw + 1.875rem);
+	position: relative;
+    margin: 10px;	
+}
+.h2inici {
+	font-family: "Advent Pro";
+	text-align: center;
+	color: #6F2DBD;
+	font-size: calc(2.5vw + 1.25rem);
+	font-weight: 600;
+	position: relative;
+}
+.credits {
+	width: calc(10vw + 500px);
+	max-width: 70vw;
+	background-color: #6F2DBD;
+	position: relative;
+	padding: 5px 8px;
+}
+.pcredits {
+	font-family: "Advent Pro";
+	font-size: calc(0.40vw + 0.815rem);
+	text-align: center;
+	color: white;
+}
+		/*BOTÓ COMENÇA*/
+.pacomenca {
+	text-align: center;
+	margin: 30px 0px 70px;
+}
+.acomenca {
+	font-size: calc(0.8vw + 0.85rem);
+	font-family: 'Roboto', sans-serif;
+	font-weight: lighter;
+	text-decoration: none;
+	border: 1px solid #6F2DBD;
+	border-radius: 7px;
+	background-color: #FFFFFF;
+	color: #7A00E3;
+	padding: 8px 30px;
+}
+.acomenca:hover{
+	background-color: #6F2DBD;
+	color: white;	
 }
