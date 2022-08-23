@@ -1,0 +1,98 @@
+						<!-- INICI CREIDTS-->
+
+						<div id="modalcredits">
+							<!--Creu-->
+							<span class="creu">&times;</span>
+							<div class="clearboth"> </div>
+			
+							<!--Titulació-->
+							<h2 class="titolcredits">Olímpiques: Reconstruint el camí</h2>
+							<h3 class="subtitolcredits">Histories de les esportistes olímpiques catalanes</h3>
+			
+			
+							<div class="wrapper">
+			
+								<!--Columna1-->
+								<div class="bloc">
+			
+									<h4 class="h3credits">Sobre el projecte</h4>
+			
+									<p>"Olímpiques: Reconstruint el camí" és un reportatge fet per Maria Asmarat i Noèlia Llobera.
+										És el resultat del treball de final de grau del Periodisme a la Universitat Pompeu fabra.
+									</p>
+			
+									<p>Si voleu contactar amb nosaltres ho podeu fer a través del correu electrónic:
+										donescatalanesalsjocs@gmail.com</p>
+			
+								</div>
+			
+			
+								<!--columna 2-->
+								<div class="bloc">
+			
+									<h4 class="h3credits">Crèdits</h4>
+			
+									<h5 class="h4credits">Agraïments</h5>
+			
+									<p>Roberto Jimenez, Silvia Mas, Pedro Hernández, Xavier Pujadas, Dolors Jané, Sílvia Parera,
+										Bàrbara Pla, Cèlia Corres, Eli Martínez, Monica Solana, Angel Bassas, Anna Giralt, Aina Cid,
+										Anna Espa, Clara Espar, Berta Bonastre, Cristina Guinea, Centre d'Estudis Olímpics, Club
+										Tenis Barcelona, Club Natació Sabadell</p>
+			
+									<h5 class="h4credits">Documentació</h5>
+			
+									<p>Jimenez Morales, Roberto. (2015). El deporte femenino español en los Juegos Olímpicos.
+										Madrid: Consejo Superior de Deportes</p>
+									<p><a href="https://www.sports-reference.com" class="webgrafia" target="_blank">Sports
+											Reference</a>. Accés maig 2020.</p>
+			
+								</div>
+			
+			
+							</div>
+			
+						</div>
+
+		<!-- MENU / INDEX -->
+		<div id="modalindex">
+				
+			<div class="barraMenu">
+				<button><img src="Imatges\down-arrow.png" class="iconaTanca"></button>
+				<h2 class="h2Index">Menú</h2>
+			</div>
+	
+			<div class="contenidorMenu">
+		
+				<div class="itemIndex">
+					<a href="intro.html" class="enllaçimatge"><div class="fotoIndex"><div class="imatgeIndexIntroduccio"></div></div></a>
+					<h3 class="h3Index"><a href="intro.html" class="enllaçSubtratllat">Introducció</a></h3>
+				</div>
+		
+				<div class="itemIndex">
+					<div class="fotoIndex"> ss</div>
+					<h3 class="h3Index">Digue'm d'on vens i et diré si vas a uns jocs</h3>
+				</div>
+		
+				<div class="itemIndex">
+					<div class="fotoIndex"> ss</div>
+					<h3 class="h3Index">Portes entreobertes</h3>
+				</div>
+		
+				<div class="itemIndex">
+					<div class="fotoIndex"> ss</div>
+					<h3 class="h3Index">Dones a la piscina: el salt que obre el camí</h3>
+				</div>
+		
+				<div class="itemIndex">
+					<div class="fotoIndex"> ss</div>
+					<h3 class="h3Index">Barcelona '92. Una explolsió de participants i resultats</h3>
+				</div>
+		
+				<div class="itemIndex">
+					<div class="fotoIndex"> </div>
+					<h3 class="h3Index">Tokio 2020. Un pas més cap endavant</h3>
+				</div>
+			</div>
+			
+		</div>
+	<!-- MENU / INDEX -->

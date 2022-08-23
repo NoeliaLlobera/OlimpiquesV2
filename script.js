@@ -22,3 +22,5 @@ let plegar_menu = () => {
         x.style.left = "-1000px";
         y.style.display="block"
 }
+
+//PAGINA INTRO

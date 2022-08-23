@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="style.css">
     <!-- Precarregar intorducció -->
     <link rel="prefetch" href="intro.html">
-    <script src="script.js"></script>
+    <script defer src="script.js" ></script>
 </head>
 
 <body>
@@ -34,7 +34,7 @@
     
     <!-- PÀGINA -->
     <div id="contenidor_pagina">
-        <!-- BARRA NAVEGACIÓ -->
+        <!-- Barra navegació -->
         <nav id="nav_desktop">
 			<ul class="ulmenu">
 				<li class="limenu"><button class="botonsnav" id="botoinici"><a class="amenu" href="">Inici</a></button></li>
@@ -45,6 +45,7 @@
 				<li class="limenu"><button class="botonsnav" id="botocredits">Crèdits</button></li>
             </ul>
         </nav>
+            <!-- Barra naveagació movil -->
         <nav id="nav_mobile">
             <label for="toggle" id="label_toggle">&#9776;</label>
             <input type="checkbox" name="toggle" id="toggle" onchange="desplegar_menu()">
@@ -60,7 +61,7 @@
                 </ul> 
             </div>
         </nav>
-
+        <!-- Contingut pàgina -->
         <main>
             <div class="containerinici">
                 <div class="titols">
@@ -72,25 +73,7 @@
                     </div>   
                 </div>
             </div>		
-
-
-
-
-
-
-
-
-
         </main>
-
-    
-    
-    
-    
-    
-    
     </div>
-
-
 </body>
 </html>
