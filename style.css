@@ -12,7 +12,6 @@ h1{
 	width: 80vw;
 	max-width: 1200px;
 	margin: 0px auto;
-	background-color: ;	
 }
 
 html {
@@ -72,7 +71,7 @@ p {
 }
 #imatge_preloader{
     display: block;
-    margin: 0px auto;
+    margin: 20px auto;
 }
 #text_preloader{
     display: block;
@@ -324,6 +323,13 @@ p {
 	order:3;
 }
 
+#contenidorpagina{
+	padding: 50px 30px 0px;
+	max-width: 1200px;
+	margin: 0px auto;
+}
+
+
 @media all and (max-width:768px){
 	.imatgecoubertein{
 		height: 55vw;
@@ -332,11 +338,10 @@ p {
 }
 
 
-.contenidorpagina{
+#contenidorpagina{
 	padding: 50px 30px 0px;
 	max-width: 1200px;
 	margin: 0px auto;
-
 }
 
 
@@ -346,20 +351,17 @@ p {
 	margin: 70px 0px;
 }
 
-
-
-
-.citacoubertein{
+.cita{
     font-family: "Advent Pro";
     font-weight: 700;
-    font-size: calc(1.3vw + 2.4rem);
+    font-size: calc(1.2vw + 2.5rem);
     text-align: end;
     color: #6F2DBD;
-	line-height: calc(1.4vw + 3.8rem);
+	line-height: calc(1.3vw + 3.8rem);
 	margin: 15vh 0px 20px;
 }
 
-.firmacoubertein{
+.firma{
 	text-align: end;
 	color: #6F2DBD;
     font-weight: 400;
@@ -477,17 +479,13 @@ p {
 		margin: 0px auto 20px;
 		order:2;
 	}
-	.o1{
-		order: 1;
-	}
 	
-
-	.citacoubertein{
+	.cita{
 		text-align: center;
 		margin: 0px;
 	}
 	
-	.firmacoubertein{
+	.firma{
 		text-align: center;
 		margin: 10px 0px 0px;
 		padding: 0px;
