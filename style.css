@@ -215,7 +215,7 @@ footer {
     color: white;
     position: -webkit-sticky;
     position: sticky;
-    left: calc(75vw - 50px);
+    left: calc(75vw - 70px);
     top: 25px;
     cursor: pointer;
   }
