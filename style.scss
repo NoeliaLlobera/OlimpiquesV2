@@ -751,7 +751,7 @@ p {
 	background-color: rgba(233, 233, 233, 0.9);
 	position: fixed;
 	top: 10px;
-	z-index: 9;
+	z-index: 99999999999999999999999999999999999999;
 	transition: transform 1s;
 	transform: translateY(-120%);
 }
@@ -766,8 +766,8 @@ p {
 	color: black;
 }
 
-.imatgeIndexIntroduccio{
-	background-image:url("Imatges/thumbnails/intro-thumbnail.png");
+.imatgeIndex{
+	background-image:url("");
 	filter: grayscale(40%);
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -780,6 +780,13 @@ p {
 	-o-transition: all 0.5s ease;
 	transition: all 0.5s ease;
 }
+.iiIntro{
+	background-image:url("Imatges/thumbnails/intro-thumbnail.png");
+}
+.iiC1{
+	background-image: url("Imatges/clases.JPG");
+}
+
 
 .imatgeIndexIntroduccio:hover{
 	transform: scale(0.95);
