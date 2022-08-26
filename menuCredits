@@ -53,46 +53,39 @@
 			
 						</div>
 
-		<!-- MENU / INDEX -->
-		<div id="modalindex">
-				
-			<div class="barraMenu">
-				<button><img src="Imatges\down-arrow.png" class="iconaTanca"></button>
-				<h2 class="h2Index">Menú</h2>
-			</div>
-	
-			<div class="contenidorMenu">
-		
-				<div class="itemIndex">
-					<a href="intro.html" class="enllaçimatge"><div class="fotoIndex"><div class="imatgeIndexIntroduccio"></div></div></a>
-					<h3 class="h3Index"><a href="intro.html" class="enllaçSubtratllat">Introducció</a></h3>
-				</div>
-		
-				<div class="itemIndex">
-					<div class="fotoIndex"> ss</div>
-					<h3 class="h3Index">Digue'm d'on vens i et diré si vas a uns jocs</h3>
-				</div>
-		
-				<div class="itemIndex">
-					<div class="fotoIndex"> ss</div>
-					<h3 class="h3Index">Portes entreobertes</h3>
-				</div>
-		
-				<div class="itemIndex">
-					<div class="fotoIndex"> ss</div>
-					<h3 class="h3Index">Dones a la piscina: el salt que obre el camí</h3>
-				</div>
-		
-				<div class="itemIndex">
-					<div class="fotoIndex"> ss</div>
-					<h3 class="h3Index">Barcelona '92. Una explolsió de participants i resultats</h3>
-				</div>
-		
-				<div class="itemIndex">
-					<div class="fotoIndex"> </div>
-					<h3 class="h3Index">Tokio 2020. Un pas més cap endavant</h3>
-				</div>
-			</div>
-			
+<!-- MENU / INDEX -->
+<div id="modalindex">		
+		<div class="barraMenu">
+			<button><img src="Imatges\down-arrow.png" class="iconaTanca"></button>
+			<h2 class="h2Index">Menú</h2>
 		</div>
-	<!-- MENU / INDEX -->
+	
+	<div class="contenidorMenu">
+		<div class="itemIndex">
+			<a href="intro.html" class="enllaçimatge"><div class="fotoIndex"><div class="imatgeIndexIntroduccio"></div></div></a>
+			<h3 class="h3Index"><a href="intro.html" class="enllaçSubtratllat">Introducció</a></h3>
+		</div>
+		<div class="itemIndex">
+			<div class="fotoIndex"> ss</div>
+			<h3 class="h3Index">Digue'm d'on vens i et diré si vas a uns jocs</h3>
+		</div>
+		<div class="itemIndex">
+			<div class="fotoIndex"> ss</div>
+			<h3 class="h3Index">Portes entreobertes</h3>
+		</div>
+		<div class="itemIndex">
+			<div class="fotoIndex"> ss</div>
+			<h3 class="h3Index">Dones a la piscina: el salt que obre el camí</h3>
+		</div>
+		<div class="itemIndex">
+			<div class="fotoIndex"> ss</div>
+			<h3 class="h3Index">Barcelona '92. Una explolsió de participants i resultats</h3>
+		</div>
+		
+		<div class="itemIndex">
+			<div class="fotoIndex"> </div>
+			<h3 class="h3Index">Tokio 2020. Un pas més cap endavant</h3>
+		</div>
+	</div>	
+</div>
+<!-- MENU / INDEX -->

@@ -18,12 +18,10 @@
 	<!-- AOS -->
 	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 	<!-- Javascript -->
-	<script defer src="script.js"></script>
+	<script src="script.js"></script>
 </head>
 
-
 <body>
-
     <!-- PRELOADER -->
     <div id="preloader">
 		<div id="finestra_preloader">
@@ -33,40 +31,38 @@
 			</div>
 		</div>
 	</div>
-
-
- <!-- Barra navegació -->
- <nav id="nav_desktop">
-	<ul class="ulmenu"> 
-		<li class="limenu"><button class="botonsnav" id="botoinici"><a class="amenu" href="">Inici</a></button></li>
-		<li class="limenu"><button class="botonsnav" id="botoindex">Índex</button></li>	
-		<li class="limenu"><button class="botonsnav" id="botoentrevistes">Entrevistes</button></li>				
-		<li class="limenu"><button class="botonsnav" id="botoesportistes">Esportistes</button></li>
-		<li class="limenu"><button class="botonsnav" id="botomedaller">Medaller</button></li>		
-		<li class="limenu"><button class="botonsnav" id="botocredits">Crèdits</button></li>
-	</ul>
-</nav>
-	<!-- Barra naveagació movil -->
-<nav id="nav_mobile">
-	<label for="toggle" id="label_toggle">&#9776;</label>
-	<input type="checkbox" name="toggle" id="toggle" onchange="desplegar_menu()">
-	<div id="menu_movil">
-	   <button id="boto_plegar" type="button" onclick="plegar_menu()">&#9587;</button> 
-		   <ul class="ulmenu">
-			<li class="limenu"><button class="botonsnav" id="botoinici"><a class="amenu" href="">Inici</a></button></li>
-			<li class="limenu"><button class="botonsnav" id="botoindex">Índex</button></li>	
+	<!-- Barra navegació -->
+	<nav id="nav_desktop">
+		<ul class="ulmenu"> 
+			<li class="limenu"><button class="botonsnav" id="botoinici"><a class="amenu" href="index.html">Inici</a></button></li>
+			<li class="limenu"><button class="botonsnav" id="botoindex" >Índex</button></li>	
 			<li class="limenu"><button class="botonsnav" id="botoentrevistes">Entrevistes</button></li>				
 			<li class="limenu"><button class="botonsnav" id="botoesportistes">Esportistes</button></li>
 			<li class="limenu"><button class="botonsnav" id="botomedaller">Medaller</button></li>		
 			<li class="limenu"><button class="botonsnav" id="botocredits">Crèdits</button></li>
-		</ul> 
-	</div>
-</nav>
+		</ul>
+	</nav>
+		<!-- Barra naveagació movil -->
+	<nav id="nav_mobile">
+		<label for="toggle" id="label_toggle">&#9776;</label>
+		<input type="checkbox" name="toggle" id="toggle" onchange="desplegar_menu()">
+		<div id="menu_movil">
+		<button id="boto_plegar" type="button" onclick="plegar_menu()">&#9587;</button> 
+			<ul class="ulmenu">
+				<li class="limenu"><button class="botonsnav" id="botoinici"><a class="amenu" href="index.html">Inici</a></button></li>
+				<li class="limenu"><button class="botonsnav" id="botoindex">Índex</button></li>	
+				<li class="limenu"><button class="botonsnav" id="botoentrevistes">Entrevistes</button></li>				
+				<li class="limenu"><button class="botonsnav" id="botoesportistes">Esportistes</button></li>
+				<li class="limenu"><button class="botonsnav" id="botomedaller">Medaller</button></li>		
+				<li class="limenu"><button class="botonsnav" id="botocredits">Crèdits</button></li>
+			</ul> 
+		</div>
+	</nav>
 
 <!-- COS DE PAGINA -->
 <div id="contenidorpagina">
 	<main id="cos">
-		<h1 class="h1intro">Introducció</h1>
+		<h1>Introducció</h1>
 		<!-- anelles -->
 		<img src="imatges/anelles.png" alt="" class="anellesintro">
 
@@ -130,10 +126,52 @@
 		</main>
 		<footer data-aos="fade-in" data-aos-anchor-placement="top-bottom">
 			<p class="textpeu"> <strong>Autores:</strong> Maria Asmarat i Noèlia Llobera</p>
+			<p class="textpeu next"> <a href="cap1.html"><strong>SEGÜENT CAPÍTOL</strong></a></p>
+
 			<p class="textpeu"> <strong>Contacte:</strong> donesalsjocs@gmail.com </p>
 		</footer>
 
 
+
+
+
+
+	<!-- MENU / INDEX -->
+	<!-- <div id="modalindex">		
+		<div class="barraMenu">
+			<button><img src="Imatges\down-arrow.png" class="iconaTanca"></button>
+			<h2 class="h2Index">Menú</h2>
+		</div>
+
+	<div class="contenidorMenu">
+		<div class="itemIndex">
+			<a href="intro.html" class="enllaçimatge"><div class="fotoIndex"><div class="imatgeIndexIntroduccio"></div></div></a>
+			<h3 class="h3Index"><a href="intro.html" class="enllaçSubtratllat">Introducció</a></h3>
+		</div>
+		<div class="itemIndex">
+			<div class="fotoIndex"> ss</div>
+			<h3 class="h3Index">Digue'm d'on vens i et diré si vas a uns jocs</h3>
+		</div>
+		<div class="itemIndex">
+			<div class="fotoIndex"> ss</div>
+			<h3 class="h3Index">Portes entreobertes</h3>
+		</div>
+		<div class="itemIndex">
+			<div class="fotoIndex"> ss</div>
+			<h3 class="h3Index">Dones a la piscina: el salt que obre el camí</h3>
+		</div>
+		<div class="itemIndex">
+			<div class="fotoIndex"> ss</div>
+			<h3 class="h3Index">Barcelona '92. Una explolsió de participants i resultats</h3>
+		</div>
+		
+		<div class="itemIndex">
+			<div class="fotoIndex"> </div>
+			<h3 class="h3Index">Tokio 2020. Un pas més cap endavant</h3>
+		</div>
+	</div>	
+	</div> -->
+	<!-- MENU / INDEX -->
 
     <!-- AOS library -->
 	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>

@@ -24,27 +24,30 @@ let plegar_menu = () => {
 }
 
 // MODAL INDEX
-var modal2 = document.getElementById("modalindex");
-var btn2 = document.getElementById("botoindex");
-var span2 = document.getElementsByClassName
-("iconaTanca")[0];
-var nav = document.getElementById
-("nav");
-	
-btn2.onclick = function () {
-modal2.style.display = "block";
-modal2.style.transform ="translateY(0%)";
-nav.style.position="fixed";
-}
-span2.onclick = function () {
-modal2.style.transform ="translateY(-120%)";
-nav.style.position="static";
-}
-window.onclick = function (event) {
-if (event.target == modal2) {
-modal2.style.transform ="translateY(-120%)";
-}
-}
+
+        let modal2 = document.getElementById("modalindex");
+        let btn2 = document.getElementById("botoindex");
+        let span2 = document.getElementsByClassName
+        ("iconaTanca")[0];
+        let nav = document.getElementById
+        ("nav");
+                
+        btn2.onclick = function () {
+        modal2.style.display = "block";
+        modal2.style.transform ="translateY(0%)";
+        nav.style.position="fixed";
+        }
+        span2.onclick = function () {
+        modal2.style.transform ="translateY(-120%)";
+        nav.style.position="static";
+        }
+        window.onclick = function (event) {
+        if (event.target == modal2) {
+        modal2.style.transform ="translateY(-120%)";
+        }
+        }
+
+
 
 // CREDITS
 var modal = document.getElementById("modalcredits");
