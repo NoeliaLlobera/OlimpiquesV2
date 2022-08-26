@@ -1,0 +1,800 @@
+*{
+  	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	font-size: 10px;
+	font-family: 'Roboto', sans-serif;
+	line-height: 1.6;
+	height: 100vh;
+	overflow-x: hidden;
+}
+
+p {
+
+	font-size: 1.8rem;
+	margin-bottom: 2rem;
+}
+
+
+/*BARRA NAVEGACIÓ*/
+.nav {
+	width: 100%;
+	background-color: #373539;
+	position: absolute;
+	z-index: 9999;
+	top: 0px;
+	padding: 8px;
+}
+
+.ulmenu{
+	color: white;
+	font-family: 'Roboto', sans-serif;
+	display: flex;
+	font-size: 1.4rem;
+	list-style: none;
+	justify-content: center;
+	}
+
+.limenu {
+	margin-right: 20px;
+	padding: 0px;
+	margin-top: auto;
+	margin-bottom: auto;
+	margin-left: 40px;
+}
+.botonsnav {
+	background-color: #373539;
+	border: none;
+	color: white;
+	margin: 0px 0px 0px -5px;
+	cursor: pointer;
+}
+
+.botonsnav:hover {
+	text-decoration: underline;	
+}
+
+
+.amenu {
+	color: white;
+	text-decoration: none;
+}
+
+label {
+	font-size:45px;
+	display: none;
+	position: absolute;
+	left: 35px;
+	top: 20px;
+	z-index: 9999;
+}
+
+#toggle{
+	display: none;
+}
+
+
+
+
+@media only screen and (max-width:685px){
+	label{
+		display: block;
+		cursor: pointer;
+	}
+	.amenu .botonsnav{
+		font-size:2rem;
+		}
+		
+	.ulmenu{
+		display: block;
+		display: none;
+	}
+	
+	.limenu{
+	padding: 16px 55px;
+	border-bottom: 1px solid hsla(0,0%,100%,0.30);
+	text-align: center;	
+	}
+	
+	nav{
+		width: auto;
+		background-color: unset;
+		position: relative;
+		z-index: 99;
+	}
+	.nav{
+		padding: 0px;
+		width: 100vw;
+		max-width: 360px;
+	}
+	#toggle:checked + .ulmenu{
+		display: block;
+		padding: 70px 0px;
+		margin-top:0px ;
+		background-color: #373539;
+		position:relative;
+		z-index: 99;
+		
+	}
+}
+/*BARRA NAVEGACIÓ*/
+
+
+
+
+
+
+
+
+
+
+
+/*PAGINA INICI*/
+.containerinici {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 90px 40px 20px;
+	background-image: linear-gradient(rgba(255,255,255,0.4),rgba(255,255,255,0.4)),url("Imatges/atletisme.jpeg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+
+	/*titulació inici*/
+.h1inici {
+	font-family: "Advent Pro";
+	text-align: center;
+	color: #6F2DBD;
+	line-height: normal;
+	font-size: calc(5.5vw + 1.875rem);
+	position: relative;	
+}
+
+.h2inici {
+	font-family: "Advent Pro";
+	text-align: center;
+	color: #6F2DBD;
+	font-size: calc(2.5vw + 2rem);
+	font-weight: 600;
+	position: relative;
+}
+
+.credits {
+	width: calc(9vw + 500px);
+	max-width: 70vw;
+	background-color: #6F2DBD;
+	position: relative;
+	padding: 0px 15px;
+}
+
+.pcredits {
+	font-family: "Advent Pro";
+	font-size: calc(1vw + 1.3rem);
+	text-align: center;
+	color: white;
+}
+
+		/*titulació inici*/
+
+
+		/*BOTÓ COMENÇA*/
+.pacomenca {
+	text-align: center;
+	margin: 25px 0px 70px;
+}
+
+.acomenca {
+	font-size: calc(1vw + 1.4rem);
+	font-family: 'Roboto', sans-serif;
+	font-weight: lighter;
+	text-decoration: none;
+	border: 1px solid #6F2DBD;
+	border-radius: 7px;
+	background-color: #FFFFFF;
+	color: #7A00E3;
+	padding: 10px 30px;
+}
+
+.acomenca:hover{
+	background-color: #6F2DBD;
+	color: white;	
+}
+
+		/*fi BOTÓ COMENÇA*/
+
+
+/*PAGINA INICI*/
+
+
+
+
+
+
+
+	/*FOOTER*/
+footer {
+	width: 100%;
+	background-color: #373539;
+	align-items: center;
+	height: 45px;;
+	display: flex;
+	justify-content: space-around;
+	position: relative;
+	}
+
+.textpeu {
+	color: white;
+	font-size: 1.4rem;
+	margin: 5px;
+
+}
+
+.textpeu2 {
+	color: white;
+	font-size: 1.6rem;
+	margin: 5px;
+	text-transform:uppercase;
+}
+
+	/*FOOTER*/
+
+
+
+
+
+
+/*CREDITS*/
+
+#botocredits {
+	background-color: #373539;
+	border: none;
+	color: white;
+	margin: 0px 0px 0px -5px;
+}
+
+#botocredits:hover {
+	text-decoration: underline;	
+}
+
+
+#botocredits:hover {
+text-decoration: underline;
+	}
+
+.creu {
+	font-size: 50px;
+	cursor: pointer;
+	position: absolute;
+		top:0px;
+		right: 28px;
+}
+
+.clearboth {
+	clear: left;
+}
+
+#modalcredits {
+	width: 90vw;
+	max-width: 1000px;
+	max-height: 90vh;
+	overflow:scroll;
+	overflow-x:hidden;
+	border: 1px solid #6F2DBD;
+	padding: 40px;
+	margin: 0px auto;
+	background-color: hsla(269,58%,92%,0.90);
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 4444444444;
+	display: none;
+}
+
+#modalcredits::-webkit-scrollbar {
+    display: none;
+}
+
+.titolcredits {
+	font-family:"Advent Pro";
+	font-size: 2.5rem;
+	text-align: center;
+	text-transform: uppercase;
+	margin: 5px;
+}
+
+.subtitolcredits {
+	font-weight:400;
+	font-size: 2rem;
+	text-align: center;
+	color: black;
+	margin: 0px 0px 20px;	
+}
+
+
+.wrapper {
+	display: flex;
+	justify-content: center;
+}
+
+
+.bloc {
+	padding: 20px;
+	width: 40%;
+}
+
+.h3credits {
+	background-color: unset;
+	font-size: 1.8rem;
+	text-align: left;
+	color: black;
+	margin: 0px;
+	padding: 0px;
+	font-weight: 500
+	}
+
+.h4credits {
+	font-family: 'Roboto', sans-serif;
+	font-size: 1.6rem;
+	margin: 8px 0px -6px; 
+	padding: 0px;
+	font-weight: normal;
+	font-style: oblique
+}
+
+
+@media all and (max-width:650px){
+	.wrapper{
+		display: block;
+	}
+	.bloc{
+		width: 100%;
+	}
+	
+}
+
+/*FI CREDITS*/
+
+
+
+/*PÀGINA INTRO*/
+
+h1 {
+	font-family: "Advent Pro";
+	font-size: calc(1.5vw + 2.8rem);
+	color:#6F2DBD;
+	display: block;
+	width: 80vw;
+	max-width: 1200px;
+	margin: 0px auto;
+	background-color: white;	
+}
+
+.contenidoranelles {
+	margin: 0px auto;
+	text-align: center;
+	width: calc(20vw + 100px);
+	position: relative;
+}
+
+
+.contenidortextintro {
+	margin: 0px auto 50px ;
+	width: 80%;
+	max-width: 1200px;
+}
+
+.textintro {
+	text-align: center;
+	font-size: 2.5rem;
+	margin-top: 20px;
+}
+
+.lila {
+	color:#6F2DBD;
+	font-weight: 600;
+}
+
+.intro1 {
+	position: relative;
+	top:30px;
+	width: 100%;
+	height: 100vh;
+	padding: 35px 0px;
+	max-height: 1000px;
+
+}
+
+.contenidorintro1 {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	overflow: scroll;
+	overflow-y: hidden;
+	height: 85%;
+}
+
+.intro2 {
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	padding: 35px 0px;
+	max-height: 1000px;
+
+}
+
+.imatgecoubertein {
+	height: 80vh;
+	position: -webkit-sticky;
+	position: sticky;
+	top: 10vh;
+	right: 30px; 
+	padding: 0px 0px 0px 40px;
+	order: 2;
+}
+
+.ordre{
+	order: 1;
+}
+
+.ordre2{
+	order:3;
+}
+
+@media all and (max-width:768px){
+	.imatgecoubertein{
+		height: 60vh;
+		top: 20vh;
+	}
+}
+
+
+.contenidorpagina{
+	padding: 50px 30px 0px;
+	max-width: 1200px;
+	margin: 0px auto;
+
+}
+
+
+.contenidorCoubertein{
+	display: flex;
+	margin: 70px 0px;
+}
+
+.contenidorCouberteinMobil{
+	display: none;
+}
+
+
+
+.citacoubertein{
+    font-family: "Advent Pro";
+    font-weight: 700;
+    font-size: calc(1.3vw + 2.4rem);
+    text-align: end;
+    color: #6F2DBD;
+	line-height: calc(1.4vw + 3.8rem);
+	margin: 15vh 0px 20px;
+}
+
+.firmacoubertein{
+	text-align: end;
+	color: #6F2DBD;
+    font-weight: 400;
+	margin-bottom: 5px;
+}
+
+.contenidorTextCoubertein {
+	margin-top: 20vh;
+	margin-bottom: 20vh;
+}
+
+.contenidorXifres{
+	display: flex;
+	width: 100%;
+	margin-bottom: -45px;
+}
+
+.conXifres2{
+	width: 50%;
+	height: 100vh;
+	background-color: #6F2DBD;
+	display: flex;
+	margin: 0px auto;
+	align-items: center;
+	justify-content: flex-end;
+	padding-right: 40px;
+}
+.conXifres3{
+	width: 50%;
+	height: 100vh;
+	display: flex;
+	margin: 0px auto;
+	align-items: center;
+	justify-content: flex-start;
+	padding-left: 40px;
+	
+}
+.xifra1{
+	font-size: calc(10vw + 8rem);
+    color: white;
+	font-weight: 600;
+	line-height: 1;
+}
+
+.xifra2{
+	font-size: calc(10vw + 8rem);
+    color:#6F2DBD;
+	font-weight: 600;
+	line-height: 1;
+}
+
+.textXifra{
+	font-size: calc(1.2vw + 1.8rem);
+	margin: 0px;
+	text-align: end;
+	font-weight: 300;
+	margin-right:40px;
+	margin-left: 40px;
+}
+
+.textXifra2{
+	font-size: calc(1.2vw + 1.8rem);
+	margin: 0px;
+	font-weight: 300;
+	margin-left:40px;
+	margin-left: 40px;
+}
+
+@media all and (max-width: 640px){
+	.contenidorXifres{
+	  display:block;
+	}
+	.conXifres2{
+	  width: 100%;
+	  height: 50vh;
+	  justify-content: center;
+	  padding: 0px;
+	}
+	  .conXifres3{
+	  width: 100%;
+	  height: 50vh;
+	  justify-content: center;
+	  padding: 0px;
+	}
+	.textXifra{
+	  text-align:center;
+	  margin: 0px 0px 0px 0px;
+	}
+	 .textXifra2{
+	  text-align:center;
+	  margin: 0px 0px 0px 0px;
+	}
+	.xifra1{
+		margin-bottom:0px;
+	}
+	.xifra2{
+		margin-bottom: 0px;
+	}
+  }
+
+  @media all and (max-width: 500px){
+	.contenidorCoubertein{
+		display: none;
+		margin: 40px 0px;
+	}
+
+	.contenidorCouberteinMobil{
+		display: block;
+	}
+
+	.imatgecoubertein{
+		position:static;
+		padding: 0px;
+		display: block;
+		margin: 30px auto;
+	}
+
+	.citacoubertein{
+		text-align: center;
+		margin: 0px;
+	}
+	
+	.firmacoubertein{
+		text-align: center;
+		margin: 10px 0px 0px;
+		padding: 0px;
+	}
+
+	.contenidorTextCoubertein {
+		margin-top: 30px;
+		margin-bottom: 30px;
+	}
+
+	body{
+		overflow-x:hidden;
+	}
+	
+	footer{
+		display: block;
+		position: static;
+		height: auto;
+		padding: 5px;
+		text-align: center;
+	}
+
+
+
+}
+
+.anellesintro{
+	width: 80%;
+	max-width: 450px;
+	display: block;
+	margin: 0px auto;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.relatiu{
+	position:relative;
+}
+
+
+
+/* PRELOADER */
+/* COMPROVAT ------------------------- */
+	#preloader{
+		width: 100vw;
+		height: 100vh;
+		background-color: white;
+		overflow: hidden;
+		z-index: 99999;
+	}
+
+	#finestra_preloader{
+		width: 100%;
+		height: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	#imatge_preloader{
+		display: block;
+		margin: 0px auto;
+	}
+	#text_preloader{
+		display: block;
+		margin: 10px auto;
+	}
+
+
+
+
+/* proves */
+
+#amaga{
+	display: none;
+}
+
+#contenidor_pagina{
+	display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* MENÚ */
+
+.itemIndex{
+	display: flex;
+	padding: 14px;
+	max-width: 800px;
+	width: 100vw;
+}
+.fotoIndex{
+	/* background-color: khaki; */
+	height: calc(5vw + 80px);
+	min-width: calc(8vw + 120px);
+
+}
+.h3Index{
+	margin: 20px 20px;
+	font-size: calc(0.7vw + 1.1rem);
+}
+.h2Index{
+	display: block;
+	border-bottom: solid 2.5px #6F2DBD;
+	width: 46px;
+	margin: -12px auto 0px;
+	font-size: 1.7rem;
+	line-height: 5rem;
+	
+}
+.barraMenu{
+	height: 55px;
+	width: 100%;
+	background-color: rgba(255, 255, 255);
+	position: fixed;
+}
+
+.contenidorMenu{
+	margin: 0px auto;
+	width: 800px;
+	padding: 10px 0px;
+	height: calc(90vh - 55px);
+	overflow-y: auto;
+	overflow-x: hidden;
+	margin-top:55px;
+}
+
+.iconaTanca{
+	background-color: rgba(233, 233, 233, 0.9);
+	width: 55px;
+	padding: 18px;
+	position: fixed;
+	right: 0px;
+	top: 0px;
+	margin: 0px;
+	transform:rotate(-180deg)
+}
+
+button{
+	cursor: pointer;
+}
+
+#modalindex{
+	height: 90vh; 
+	width: 100vw;
+	margin-top: 20px;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	background-color: rgba(233, 233, 233, 0.9);
+	position: fixed;
+	top: 20px;
+	z-index: 9;
+	transition: transform 1s;
+	transform: translateY(-120%);
+}
+
+.enllaçSubtratllat{
+	text-decoration: none;
+	color: black;
+}
+
+.enllaçSubtratllat:hover{
+	text-decoration: underline;
+	color: black;
+}
+
+.imatgeIndexIntroduccio{
+	background-image:url("Imatges/thumbnails/intro-thumbnail.png");
+	filter: grayscale(40%);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	height: 100%;
+	width: 100%;´
+	-webkit-transition: all 0.5s ease; 
+	-moz-transition: all 0.5s ease; 
+	-ms-transition: all 0.5s ease; 
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+
+.imatgeIndexIntroduccio:hover{
+	transform: scale(0.95);
+}

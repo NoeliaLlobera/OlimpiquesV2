@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Olímpiques - Digue'm d'on vens i et diré si vas a uns jocs</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Advent+Pro:wght@100;200;300;400;500;600;700&display=swap"
+	rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+	<!-- AOS -->
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<!-- Javascript -->
+	<script src="script.js"></script>
+</head>
+<body>
+        <!-- PRELOADER -->
+        <div id="preloader">
+            <div id="finestra_preloader">
+                <div>
+                <img src="Imatges\813.gif" id="imatge_preloader">
+                <p id="text_preloader">Carregant pàgina...</p>
+                </div>
+            </div>
+        </div>
+        <!-- Barra navegació -->
+        <nav id="nav_desktop">
+            <ul class="ulmenu"> 
+                <li class="limenu"><button class="botonsnav" id="botoinici"><a class="amenu" href="">Inici</a></button></li>
+                <li class="limenu"><button class="botonsnav" id="botoindex" >Índex</button></li>	
+                <li class="limenu"><button class="botonsnav" id="botoentrevistes">Entrevistes</button></li>				
+                <li class="limenu"><button class="botonsnav" id="botoesportistes">Esportistes</button></li>
+                <li class="limenu"><button class="botonsnav" id="botomedaller">Medaller</button></li>		
+                <li class="limenu"><button class="botonsnav" id="botocredits">Crèdits</button></li>
+            </ul>
+        </nav>
+            <!-- Barra naveagació movil -->
+        <nav id="nav_mobile">
+            <label for="toggle" id="label_toggle">&#9776;</label>
+            <input type="checkbox" name="toggle" id="toggle" onchange="desplegar_menu()">
+            <div id="menu_movil">
+            <button id="boto_plegar" type="button" onclick="plegar_menu()">&#9587;</button> 
+                <ul class="ulmenu">
+                    <li class="limenu"><button class="botonsnav" id="botoinici"><a class="amenu" href="">Inici</a></button></li>
+                    <li class="limenu"><button class="botonsnav" id="botoindex">Índex</button></li>	
+                    <li class="limenu"><button class="botonsnav" id="botoentrevistes">Entrevistes</button></li>				
+                    <li class="limenu"><button class="botonsnav" id="botoesportistes">Esportistes</button></li>
+                    <li class="limenu"><button class="botonsnav" id="botomedaller">Medaller</button></li>		
+                    <li class="limenu"><button class="botonsnav" id="botocredits">Crèdits</button></li>
+                </ul> 
+            </div>
+        </nav>
+
+        <!-- COS DE LA PÀGINA -->
+        <div id="contenidorpagina">
+            <main id="cos">
+                <h1>Digue'm d'on vens i et diré si vas a uns jocs</h1>
+
+                <section id="condicionants">
+                    <p class="textintro">Avui en dia fer esport està pràcticament a l'abast de tothom. Això, però, no ha estat sempre així. Abans hi havia alguns condicionants</p>
+                    <h2 > Quins eren aquests condicionants?</h2>
+
+                    <div class="flexSimple" id="contCondicionants">
+                        <div class="contClasse">
+                            <p>CLASSE SOCIAL</p>
+                            <div class="pols"></div>
+                        </div>
+                        <div class="contClasse">
+                            <p>COGNOMS OLÍMPICS</p>
+                            <div class="pols pols2"></div>
+                        </div class="contClasse">
+                        <div class="contClasse">
+                            <p>CIUTATS OLÍMPIQUES</p>
+                            <div class="pols pols3"></div>
+                        </div>
+                    </div>
+                </section>
+
+
+
+
+
+
+
+            </main>
+        </div>
+
+
+
+
+
+    
+    
+</body>
+</html>
