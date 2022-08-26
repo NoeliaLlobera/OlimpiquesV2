@@ -35,7 +35,7 @@
 	<nav id="nav_desktop">
 		<ul class="ulmenu"> 
 			<li class="limenu"><button class="botonsnav" id="botoinici"><a class="amenu" href="index.html">Inici</a></button></li>
-			<li class="limenu"><button class="botonsnav" id="botoindex" >Índex</button></li>	
+			<li class="limenu"><button class="botonsnav" id="botoindex" onclick="bIndex()" >Índex</button></li>	
 			<li class="limenu"><button class="botonsnav" id="botoentrevistes">Entrevistes</button></li>				
 			<li class="limenu"><button class="botonsnav" id="botoesportistes">Esportistes</button></li>
 			<li class="limenu"><button class="botonsnav" id="botomedaller">Medaller</button></li>		
@@ -50,7 +50,7 @@
 		<button id="boto_plegar" type="button" onclick="plegar_menu()">&#9587;</button> 
 			<ul class="ulmenu">
 				<li class="limenu"><button class="botonsnav" id="botoinici"><a class="amenu" href="index.html">Inici</a></button></li>
-				<li class="limenu"><button class="botonsnav" id="botoindex">Índex</button></li>	
+				<li class="limenu"><button class="botonsnav" id="botoindex" onclick="bIndex()">Índex</button></li>	
 				<li class="limenu"><button class="botonsnav" id="botoentrevistes">Entrevistes</button></li>				
 				<li class="limenu"><button class="botonsnav" id="botoesportistes">Esportistes</button></li>
 				<li class="limenu"><button class="botonsnav" id="botomedaller">Medaller</button></li>		
@@ -133,13 +133,11 @@
 
 
 
-
-
-
+		
 	<!-- MENU / INDEX -->
-	<!-- <div id="modalindex">		
+	<div id="modalindex">		
 		<div class="barraMenu">
-			<button><img src="Imatges\down-arrow.png" class="iconaTanca"></button>
+			<button><img src="Imatges\down-arrow.png" class="iconaTanca" onclick="tancarIndex()"></button>
 			<h2 class="h2Index">Menú</h2>
 		</div>
 
@@ -170,7 +168,7 @@
 			<h3 class="h3Index">Tokio 2020. Un pas més cap endavant</h3>
 		</div>
 	</div>	
-	</div> -->
+	</div>
 	<!-- MENU / INDEX -->
 
     <!-- AOS library -->

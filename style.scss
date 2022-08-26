@@ -14,6 +14,10 @@ a{
 	color: unset;
 	text-decoration: none;
 }
+
+button{
+	cursor: pointer;
+}
 h1{
 	font-family: "Advent Pro";
 	font-size: calc(1.5vw + 1.75rem);
@@ -679,4 +683,112 @@ p {
 	background-image: url(./Imatges/CIUTATS-min.PNG);
 	background-repeat: no-repeat;
 	background-size: cover;
+}
+
+
+
+
+//MENU INDEX
+.itemIndex{
+	display: flex;
+	padding: 14px;
+	max-width: 800px;
+	width: 100vw;
+}
+.fotoIndex{
+	background-color: khaki;
+	height: calc(5vw + 80px);
+	min-width: calc(8vw + 120px);
+
+}
+.h3Index{
+	margin: 20px 20px;
+	font-size: calc(0.7vw + 0.688rem);
+}
+.h2Index{
+	display: block;
+	border-bottom: solid 2.5px #6F2DBD;
+	width: 46px;
+	margin: -22px auto 0px;
+	font-size: 1.063rem;
+	line-height: 50px;
+	
+}
+.barraMenu{
+	height: 55px;
+	width: 100%;
+	background-color: rgba(255, 255, 255);
+	position: fixed;
+}
+
+.contenidorMenu{
+	margin: 0px auto;
+	width: 800px;
+	padding: 10px 0px;
+	height: calc(90vh - 55px);
+	overflow-y: auto;
+	overflow-x: hidden;
+	margin-top:55px;
+}
+
+.iconaTanca{
+	background-color: rgba(233, 233, 233, 0.9);
+	width: 55px;
+	padding: 18px;
+	position: fixed;
+	right: 0px;
+	top: 0px;
+	margin: 0px;
+	transform:rotate(-180deg)
+}
+
+#modalindex{
+	height: 90vh; 
+	width: 100vw;
+	margin-top: 20px;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	background-color: rgba(233, 233, 233, 0.9);
+	position: fixed;
+	top: 10px;
+	z-index: 9;
+	transition: transform 1s;
+	transform: translateY(-120%);
+}
+
+.enllaçSubtratllat{
+	text-decoration: none;
+	color: black;
+}
+
+.enllaçSubtratllat:hover{
+	text-decoration: underline;
+	color: black;
+}
+
+.imatgeIndexIntroduccio{
+	background-image:url("Imatges/thumbnails/intro-thumbnail.png");
+	filter: grayscale(40%);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	height: 100%;
+	width: 100%;
+	-webkit-transition: all 0.5s ease; 
+	-moz-transition: all 0.5s ease; 
+	-ms-transition: all 0.5s ease; 
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+
+.imatgeIndexIntroduccio:hover{
+	transform: scale(0.95);
+}
+
+@media all and (max-width:768px){
+	#modalindex{
+		margin-top: 0px;
+		top: 0px;
+	}
+	
 }
